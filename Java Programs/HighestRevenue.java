@@ -5,7 +5,6 @@ public class HighestRevenue
     {
         Scanner obj=new Scanner(System.in);
         int n=obj.nextInt();
-        
         int b=0,a=obj.nextInt();
         int arr2[]=new int[n];
         for(int i=0;i<n;i++)
@@ -28,5 +27,4 @@ public class HighestRevenue
             System.out.print(arr2[i]+" ");
         }
     }
-    
 }
