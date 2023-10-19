@@ -31,7 +31,15 @@ void create()
     }
     printf("stack is created");
 }
-
+void display()
+{
+    temp=top;
+    while(temp!=NULL)
+    {
+        printf("%d",temp->data);
+        temp=temp->next;
+    }
+}
 int main()
 {
     int i;
@@ -53,6 +61,6 @@ int main()
         ptr=ptr->next;
     }
   }
-    top=head
-   
+    top=temp;
+   display();
 }

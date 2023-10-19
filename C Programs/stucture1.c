@@ -5,7 +5,6 @@ struct student
     int regNo;
     char name[25];
     int mark[3];
-    char grade;
 }a[5];               //structure reference
 int main()
 {
@@ -13,12 +12,18 @@ int main()
   {
     scanf("%d",&a[i].regNo);
     scanf("%s",&a[i].name);
-    scanf("%d",&a[i].mark);
-    scanf("%s",&a[i].grade);
+    for(int j=0;j<3;j++)
+    {
+        scanf("%d",&a[i].mark[j]);
+    }
   }
   for(int i=0;i<5;i++)
   {
-    printf("\n%d %s - %d %c ",a[i].regNo,a[i].name,a[i].mark,a[i].grade);
+    printf("\n%d %s -",a[i].regNo,a[i].name);
+    for(int j=0;j<3;j++)
+    {
+        printf("%d ",a[i].mark[j]);
+    }
   }
     return 0;
 }
