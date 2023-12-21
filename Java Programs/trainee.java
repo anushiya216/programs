@@ -9,9 +9,6 @@ public class trainee
         for(int i=0;i<n;i++)
         {
             arr[i]=obj.nextInt();
-        }
-        for(int i=0;i<n;i++)
-        {
             if(arr[i]<0 || arr[i]>100 )
             {
                 System.out.println("Invalid Input");

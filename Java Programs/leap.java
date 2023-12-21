@@ -1,8 +1,7 @@
 import java.util.*;
 public class leap {
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public static void main(String[] args) 
+	{
 		Scanner obj=new Scanner(System.in);
 		int n=obj.nextInt();
 		if(((n%4==0) && (n%100!=0)) || (n%400==0))
